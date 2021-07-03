@@ -84,27 +84,33 @@
                 margin-top: 6px;
                 padding: 0 15px;
                 display: flex;
-                justify-content: flex-start;
+                /* justify-content: flex-start; */
                 align-items: center;
                 color: rgb(170, 170, 170);
             }
+            #search-bar:hover {
+                filter: drop-shadow(5px 5px 5px #dfe1e5);
+            }
             #search-input-area {
                 font-size: 15px;
-                width: auto;
+                display: flex;
+                width: 100%;
             }
             #search-input-field {
                 font-size: 20px;
                 height: 30px;
-                margin: 0;
                 border: none;
-                /* flex-grow: 400px; */
-                /* min-width: 263px; */
-                width: auto;
+                display: flex;
+                flex-grow: 1;
+                margin-left: 10px;
+            }
+            #search-input-field:hover {
+                filter: none;
             }
             #mic {
-                /* justify-self: flex-end; */
-                margin-right: 0;
-                margin-left: auto;
+                display: flex;
+                justify-self: flex-end;
+                margin-left: 10px;
             }
         </style>
         <title>Google</title>
