@@ -146,6 +146,39 @@
             #blurb a:hover {
                 /* text-decoration-thickness: initial; */
             }
+            #footer {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: auto;
+                padding: 0 20px;
+                background-color: #f2f2f2;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly; 
+                color: #70757a;           }
+            #footer #carbon {
+                width: 100%;
+                text-align: center;
+            }
+            #footer a {
+                padding: 15px;
+                display: block;
+            }
+            #footer img {
+                height: 14px;
+                margin-right: 6px;
+            }
+            #footer #foot-left {
+                display: flex;
+            }
+            #footer #foot-right {
+            }
+            .footer-block {
+                display: flex;
+                justify-content: space-evenly;
+            }
         </style>
         <title>Google</title>
     </head>
@@ -192,7 +225,21 @@
             </div>
         </div>
         <footer id="footer">
-
+            <div id="carbon" class="footer-block">
+                <a  href="">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAAPFBMVEVLoEN0wU6CzFKCzFKCzFKCzFKCzFJSo0MSczNDmkCCzFJPoUMTczNdr0gmgziCzFITczMTczMTczMTczPh00jOAAAAFHRSTlPF/+bIsms8Ad///hX+//5/tXw7aMEAx10AAACaSURBVHgBbc4HDoRQCATQ33tbvf9dF9QxaCT9UQaltLHOh/golXKhMs5Xqa0xU1lyoa2fXFyQOsDG38qsLy4TaV+sFislovyhPzLJJrBu6eQOtpW0LjbJkzTuTDLRVNKa3uxJI+VdiRqXSeu6GW+Qxi29eLIi8H7EsYrT42BD+mQtNO5JMjRuC4lSY8V4hsLX0egGijvUSEP9AbylEsOkeCgWAAAAAElFTkSuQmCC"><span>Carbon neutral since 2007</span>
+                </a>
+            </div>
+            <div id="foot-left" class="footer-block">
+                <a href="">Advertising</a>
+                <a href="">Business</a>
+                <a href="">How Search Works</a>
+            </div>
+            <div id="foot-right" class="footer-block">
+                <a href="">Privacy</a>
+                <a href="">Terms</a>
+                <a href="">Settings</a>
+            </div>
         </footer>
     </body>
 </html>
